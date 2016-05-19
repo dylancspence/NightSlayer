@@ -8,6 +8,10 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody rb;
 
+//	public float speed1 = 3.0F;
+//	public float rotateSpeed = 3.0F;
+
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();
@@ -21,5 +25,12 @@ public class PlayerController : MonoBehaviour {
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
 		rb.AddForce (movement * speed);
+
+//		CharacterController controller = GetComponent<CharacterController>();
+//		transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
+//		Vector3 forward = transform.TransformDirection(Vector3.forward);
+//		float curSpeed = speed * Input.GetAxis("Vertical");
+//		controller.SimpleMove(forward * curSpeed);
+
 	}
 }

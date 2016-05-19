@@ -6,6 +6,9 @@ public class HealthSlot : MonoBehaviour {
 	public Text health;
 	public Text demo;
 	public int num;
+	public AudioClip bing;
+	public AudioClip hit;
+
 	// Use this for initialization
 	void OnTriggerEnter(Collider other){
 
@@ -14,7 +17,7 @@ public class HealthSlot : MonoBehaviour {
 			num = num + 10;
 			health.text = num.ToString();
 			other.gameObject.SetActive (false);
-
+			AudioSource.PlayClipAtPoint (bing, transform.position);
 		}
 
 	}
@@ -28,19 +31,20 @@ public class HealthSlot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (num <= 0) {
+		if (num == 0) {
 			
-			num = 0;
+			//num = 0;
 
 			print("You're Death");
 
 		}
 
 
-		if (Input.GetKeyDown ("space")) {
+		if (Input.GetKeyDown ("space")&& num > 0) {
 			print ("space key was pressed for Health");
 			num = num - 5;
 			health.text = num.ToString();
+			AudioSource.PlayClipAtPoint (hit, transform.position);
 		}
 	}
 }

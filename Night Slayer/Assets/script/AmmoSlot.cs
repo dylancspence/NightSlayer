@@ -42,13 +42,13 @@ public class AmmoSlot : MonoBehaviour {
 		}
 		if (num <= 0) {
 			PlayerThrow.ready = false;
-			num = 0;
-			textnum = num;
-			ammo.text = textnum.ToString();
+//			num = 0;
+//			textnum = num;
+//			ammo.text = textnum.ToString();
 		}
 
 
-		if (Input.GetKeyDown ("a") && num >= 0) {
+		if (Input.GetKeyDown ("a") && num > 0) {
 			print ("Player Fire Ammo");
 			num = num - 1;
 			textnum = num;
