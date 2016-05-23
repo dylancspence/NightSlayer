@@ -20,7 +20,7 @@ GameObject:
   - 82: {fileID: 8208404}
   m_Layer: 0
   m_Name: cross (fire)
-  m_TagString: Untagged
+  m_TagString: cross
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1774,6 +1774,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Volume
       value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: cross
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

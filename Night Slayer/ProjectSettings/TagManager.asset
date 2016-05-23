@@ -6,7 +6,7 @@ TagManager:
   tags:
   - health
   - cross
-  - key
+  - laser
   layers:
   - Default
   - TransparentFX

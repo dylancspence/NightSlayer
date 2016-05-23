@@ -19,6 +19,14 @@ public class HealthSlot : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			AudioSource.PlayClipAtPoint (bing, transform.position);
 		}
+		if (other.gameObject.CompareTag ("laser")) {
+			
+			num = num - 10;
+			health.text = num.ToString();
+			other.gameObject.SetActive (false);
+			AudioSource.PlayClipAtPoint (hit, transform.position);
+		}
+
 
 	}
 	void Start () {

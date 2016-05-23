@@ -20,7 +20,7 @@ public class PlayerThrow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//throwing cross
-		if (ready == true && Input.GetKeyDown ("a")) {
+		if (ready == true && Input.GetKeyDown ("q")) {
 
 			if((Time.time > fireTime)){
 

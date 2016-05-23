@@ -48,7 +48,7 @@ public class AmmoSlot : MonoBehaviour {
 		}
 
 
-		if (Input.GetKeyDown ("a") && num > 0) {
+		if (Input.GetKeyDown ("q") && num > 0) {
 			print ("Player Fire Ammo");
 			num = num - 1;
 			textnum = num;
