@@ -6,8 +6,8 @@ public class KeySlot : MonoBehaviour {
 
 	//public Canvas hud;
 	public GameObject k0, k1, k2,k3,k4,k5;
-
-	public int key = 0;
+	public AudioClip bing;
+	public static float  key = 0;
 	//public Collider o;
 
 	void OnTriggerEnter(Collider other){
@@ -17,7 +17,7 @@ public class KeySlot : MonoBehaviour {
 			if (key == 5) {
 				print ("You Got The Final Key");
 			}
-
+			AudioSource.PlayClipAtPoint (bing, transform.position);
 			other.gameObject.SetActive (false);
 
 		}

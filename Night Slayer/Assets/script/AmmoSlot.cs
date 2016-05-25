@@ -7,7 +7,7 @@ public class AmmoSlot : MonoBehaviour {
 	public Text ammo;
 	public  int num;
 	public  int textnum;
-
+	public AudioClip bing;
 
 
 	void OnTriggerEnter(Collider other){
@@ -17,6 +17,7 @@ public class AmmoSlot : MonoBehaviour {
 			num = num + 11;
 			textnum = num;
 			ammo.text = textnum.ToString();
+			AudioSource.PlayClipAtPoint (bing, transform.position);
 			other.gameObject.SetActive (false);
 
 		}
@@ -49,7 +50,7 @@ public class AmmoSlot : MonoBehaviour {
 
 
 		if (Input.GetKeyDown ("q") && num > 0) {
-			print ("Player Fire Ammo");
+			//print ("Player Fire Ammo");
 			num = num - 1;
 			textnum = num;
 			ammo.text = textnum.ToString();
