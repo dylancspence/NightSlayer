@@ -20,11 +20,14 @@ public class Skull : MonoBehaviour {
 
 	public float skullHealth = 15;
 
+	public Rigidbody exp;
+	public float maxforce = 0;
+
 
 	void OnTriggerEnter(Collider other){
 
 		if (other.gameObject.CompareTag ("cross")) {
-			print ("hit");
+			//print ("Skullman is in pain");
 			skullHealth = skullHealth - 5;
 			Destroy (other.gameObject);
 
@@ -61,6 +64,10 @@ public class Skull : MonoBehaviour {
 		}
 
 		if (skullHealth == 0) {
+			Rigidbody tempBullet = Instantiate(exp, transform.position, transform.rotation)as Rigidbody;
+
+			//print ("No!!! Skullman!!!");
+			tempBullet.velocity = transform.forward * maxforce;
 			Destroy (gameObject);
 
 

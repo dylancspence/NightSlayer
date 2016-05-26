@@ -26,7 +26,7 @@ public class PlayerThrow : MonoBehaviour {
 
 
 
-				Debug.Log("player fires");
+				//Debug.Log("player fires");
 
 				Rigidbody tempBullet = Instantiate(bullet, transform.position, transform.rotation)as Rigidbody;
 
