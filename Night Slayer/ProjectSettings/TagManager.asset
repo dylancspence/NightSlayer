@@ -7,6 +7,8 @@ TagManager:
   - health
   - cross
   - laser
+  - key
+  - C
   layers:
   - Default
   - TransparentFX

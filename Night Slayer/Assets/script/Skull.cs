@@ -38,8 +38,8 @@ public class Skull : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		myTarget = GameObject.FindWithTag("Player").transform;
-
+		//myTarget = GameObject.FindWithTag("Player").transform;
+		myTarget = GameObject.FindWithTag("C").transform;
 		attackDistance = Random.Range(minAttack, maxAttack);
 	}
 	

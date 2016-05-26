@@ -48,11 +48,11 @@ public class HealthSlot : MonoBehaviour {
 		}
 
 
-		if (Input.GetKeyDown ("space")&& num > 0) {
-			print ("space key was pressed for Health");
-			num = num - 5;
-			health.text = num.ToString();
-			AudioSource.PlayClipAtPoint (hit, transform.position);
-		}
+//		if (Input.GetKeyDown ("space")&& num > 0) {
+//			print ("space key was pressed for Health");
+//			num = num - 5;
+//			health.text = num.ToString();
+//			AudioSource.PlayClipAtPoint (hit, transform.position);
+//		}
 	}
 }
