@@ -34,6 +34,12 @@ public class HealthSlot : MonoBehaviour {
 		health.text = num.ToString();
 	}
 
+	void LoseHealth (int number){
+		num = num - number;
+		health.text = num.ToString();
+
+	}
+
 
 
 	// Update is called once per frame

@@ -5,7 +5,7 @@ public class exp : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, 1);
+		Destroy (gameObject, 2);
 	}
 	
 	// Update is called once per frame

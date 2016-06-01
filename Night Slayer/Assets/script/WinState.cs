@@ -6,7 +6,7 @@ public class WinState : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 
-		if (other.gameObject.CompareTag ("Player")) {
+		if (other.gameObject.CompareTag ("C")) {
 
 			if (KeySlot.key == 5) {
 				print ("You Have All Five Keys");
