@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class HealthSlot : MonoBehaviour {
 	public Text health;
@@ -8,6 +9,8 @@ public class HealthSlot : MonoBehaviour {
 	public int num;
 	public AudioClip bing;
 	public AudioClip hit;
+
+	public string levelToLoad;
 
 	// Use this for initialization
 	void OnTriggerEnter(Collider other){
@@ -50,7 +53,7 @@ public class HealthSlot : MonoBehaviour {
 			//num = 0;
 
 			print("You're Death");
-
+			SceneManager.LoadScene (levelToLoad);
 		}
 
 

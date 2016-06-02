@@ -4343,6 +4343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d23a1ef0c634732839742bfef1c7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelToLoad: Win
 --- !u!65 &1231798984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6291,6 +6292,7 @@ MonoBehaviour:
   num: 0
   bing: {fileID: 8300000, guid: 4e05be2b8ee81467195d5f890e55949e, type: 3}
   hit: {fileID: 8300000, guid: 431001730382940c88bee6836e538c8d, type: 3}
+  levelToLoad: Lose
 --- !u!114 &1995699176
 MonoBehaviour:
   m_ObjectHideFlags: 0

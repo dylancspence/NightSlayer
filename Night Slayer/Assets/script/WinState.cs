@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class WinState : MonoBehaviour {
 
+	public string levelToLoad;
 
 	void OnTriggerEnter(Collider other){
 
@@ -10,7 +11,7 @@ public class WinState : MonoBehaviour {
 
 			if (KeySlot.key == 5) {
 				print ("You Have All Five Keys");
-
+				SceneManager.LoadScene (levelToLoad);
 			}
 			else 
 				print ("You Don't Have All Five Keys");
