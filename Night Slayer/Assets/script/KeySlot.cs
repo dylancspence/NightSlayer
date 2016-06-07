@@ -7,7 +7,7 @@ public class KeySlot : MonoBehaviour {
 	//public Canvas hud;
 	public GameObject k0, k1, k2,k3,k4,k5;
 	public AudioClip bing;
-	public static float  key = 0;
+	public static float  key;
 	//public Collider o;
 
 	void OnTriggerEnter(Collider other){
@@ -26,7 +26,7 @@ public class KeySlot : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-
+		key = 0;
 
 	}
 	

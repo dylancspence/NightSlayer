@@ -63,7 +63,7 @@ public class Skull : MonoBehaviour {
 			//GetComponent<SmoothLookAt>().enabled=true;
 		}
 
-		if (skullHealth == 0) {
+		if (skullHealth <= 0) {
 			Rigidbody tempBullet = Instantiate(exp, transform.position, transform.rotation)as Rigidbody;
 
 			//print ("No!!! Skullman!!!");

@@ -48,7 +48,7 @@ public class HealthSlot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (num == 0) {
+		if (num <= 0) {
 			
 			//num = 0;
 
